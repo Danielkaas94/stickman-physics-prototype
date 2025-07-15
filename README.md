@@ -19,8 +19,8 @@ python main.py
 ```
 
 ### Goals
-✅ Standing stickman with joints
-⏳ Sticky feet mechanic
-⏳ Walking simulation
-⏳ Jumping with arrow keys
-⏳ Store/projectiles/AI
+- ✅ Standing stickman with joints
+- ⏳ Sticky feet mechanic
+- ⏳ Walking simulation
+- ⏳ Jumping with arrow keys
+- ⏳ Store/projectiles/AI
