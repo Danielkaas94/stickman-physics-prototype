@@ -109,7 +109,6 @@ for shapes, color in stickmen:
             pygame.draw.circle(screen, color, pos, int(shape.radius))
 
 
-# help(torso.apply_impulse_at_local_point) # See if there's a docstring
 upright = pymunk.DampedRotarySpring(space.static_body, stickman1["torso"], 0, 2000000, 100000)
 space.add(upright)
 
@@ -124,11 +123,19 @@ while running:
         mouse_point = pymunk.pygame_util.from_pygame(mouse_pos, screen)
         mouse_body.position = mouse_point
 
-    # Keypress - Space logic - Jump
+    # Keypress - Space logic - Movement
     keys = pygame.key.get_pressed()
+    torso = stickman1["torso"]
     if keys[pygame.K_SPACE]:
-        torso = stickman1["torso"]
         torso.apply_impulse_at_local_point((0,-500))
+    if keys[pygame.K_w]:
+        torso.apply_force_at_local_point((0, -5000))  # Up
+    if keys[pygame.K_s]:
+        torso.apply_force_at_local_point((0, 5000))   # Down
+    if keys[pygame.K_a]:
+        torso.apply_force_at_local_point((-5000, 0))  # Left
+    if keys[pygame.K_d]:
+        torso.apply_force_at_local_point((5000, 0))   # Right
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
