@@ -50,3 +50,7 @@ static void sceneSoftBody(Solver* solver)
     }
 }
 ```
+
+---
+
+![Sea Cucumber](https://upload.wikimedia.org/wikipedia/commons/1/11/Actinopyga_echinites1.jpg)
