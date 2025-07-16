@@ -110,15 +110,13 @@ for shapes, color in stickmen:
 
 
 # help(torso.apply_impulse_at_local_point) # See if there's a docstring
+upright = pymunk.DampedRotarySpring(space.static_body, stickman1["torso"], 0, 2000000, 100000)
+space.add(upright)
 
 running = True
 # This is my main event loop, correct?
 while running:
     screen.fill((30, 30, 30))
-
-    upright = pymunk.DampedRotarySpring(space.static_body, stickman1["torso"], 0, 2000000, 100000)
-    space.add(upright)
-
 
 # The order is not a big deal? The indent is pretty important!
     if dragged_joint:
