@@ -8,7 +8,7 @@
 ---
 
 - [github.com/bepu/bepuphysics2](https://github.com/bepu/bepuphysics2)
-- [github.com/savant117](https://github.com/savant117/avbd-demo2d)
+- [github.com/savant117/avbd-demo2d](https://github.com/savant117/avbd-demo2d)
 - [AVBD 2D Demo](https://graphics.cs.utah.edu/research/projects/avbd/avbd_demo2d.html)
 
 ---
